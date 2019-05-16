@@ -22,7 +22,7 @@ public class HomeController {
     @RequestMapping("/")
     public String listform(Model model) {
         model.addAttribute("courses", courseRepository.findAll());
-        return "lisr";
+        return "list";
     }
 
     @GetMapping("/add")
